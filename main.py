@@ -1,21 +1,13 @@
-class Student:
-    def __init__(self, name, age, height, number):
+class Animal:
+    def __init__(self, name, age, height, Breed):
         self.name = name
         self.age = age
         self.height = height
-        self.number = number
+        self.Breed = Breed
 
-    def grow(self, height = 1):
-        self.height += height
+sobaka = Animal(name="sobaka", age=5, height="60", Breed="Mutt")
 
-
-
-Mark = Student(name="Mark", age=14, height="250", number="+380 (96) 529 3240")
-
-print("Name - ", Mark.name)
-print("Age - ", Mark.age)
-print("Height - ", Mark.height)
-print("Number - ", Mark.number)
-
-Mark.grow(height="5")
-print(Mark.height)
+print("Name - ", sobaka.name)
+print("Age - ", sobaka.age)
+print("Height - ", sobaka.height)
+print("Breed - ", sobaka.Breed)
